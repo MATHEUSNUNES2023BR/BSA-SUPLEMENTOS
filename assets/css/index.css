@@ -6,9 +6,20 @@
     color: #ffffff;
     font-family: "Roboto Condensed", sans-serif;
 }
-.r2{
-    margin-top: 15vh;
+.r2, .r3{
+    margin-top: 6vh;
 }
-.r2 h2{
-    color: aliceblue;
+.r2,.r3 > h2{
+    color: white;
+    text-shadow: 1px 1px 4px #ffa502;
+}
+
+.nutricionais img {
+    width: 95%;
+    border: 3px solid rgba(0, 0, 0, 0.459);
+    &:hover{
+        transform: scale(1.05);
+        cursor: pointer;
+        transition: linear 0.2s;
+    }
 }
