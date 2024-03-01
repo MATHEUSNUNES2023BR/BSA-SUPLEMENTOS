@@ -1,15 +1,15 @@
 .r1{
-    border-bottom: 2px solid rgb(255, 255, 255);
+    border-bottom: 2px solid #f1f2f6;
 }
 .r1 h1{
     font-size: 48px;
+    font-family: "Alice", serif;
     color: #ffffff;
-    font-family: "Roboto Condensed", sans-serif;
 }
 .r2, .r3{
     margin-top: 6vh;
 }
-.r2,.r3 > h2{
+.r2 .r3, h2{
     color: white;
     text-shadow: 1px 1px 4px #ffa502;
 }
@@ -21,5 +21,15 @@
         transform: scale(1.05);
         cursor: pointer;
         transition: linear 0.2s;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .r1 h1{
+        font-size: 40px;
+    }
+    .r2 .r3, h2{
+        font-size: 32px;
+        text-align: center;
     }
 }
