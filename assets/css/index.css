@@ -1,0 +1,14 @@
+.r1{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.r1 h1{
+    font-size: 48px;
+    color: #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.r2{
+    margin-top: 15vh;
+}
+.r2 h2{
+    color: aliceblue;
+}
