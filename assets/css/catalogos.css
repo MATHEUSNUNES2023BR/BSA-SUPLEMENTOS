@@ -15,8 +15,11 @@ hr{
     color: white;
     text-shadow: 2px 1px 8px #eccc68; 
 }
+.Catalogo h2{
+    font-size: 40px;
+}
 .input{
-    width: 75%;
+    width: 95%;
     height: 50px;
 }
 
@@ -27,10 +30,11 @@ hr{
     }
 }
 .card-header{
-    height: 13ch;
+    height: 12ch;
 }
 .card-title{
     color: #2f3542;
+    font-size: calc(0.9vw + 8px);
 }
 .item-img{
     &:hover{
@@ -42,7 +46,11 @@ hr{
     width: 12%;
     margin-right: 5%;
 }
-
+@media screen and (min-width:577px) and (max-width:992px){
+    .card-title{
+        font-size: calc(1.3vw + 8px);
+    }
+}
 @media screen and (max-width:576px){
     #Catalogos h1{
         margin-top: 4vw;
@@ -52,22 +60,12 @@ hr{
         font-size: 9vw;
     }
     .Catalogo h2{
-        color: white;
         font-size: 8vw;
-        text-shadow: 2px 1px 8px #eccc68; 
     }
     .input{
         width: 90%;
     }
     .card-title{
-        font-size: 24px;
-    }
-    @media screen and (max-height:569px){
-        .card-title{
-            font-size: 18px;
-        }
-        .card-header{
-            height: 8ch;
-        }
+        font-size: calc(4.5vw + 8px);
     }
 }
