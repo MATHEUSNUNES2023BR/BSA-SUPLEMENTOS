@@ -1,7 +1,7 @@
 import './home.css'
 function HomePage(){
-    let nomes = ['PRODUTOS NUTRICIONAS', 'PRODUTOS DERMOCOSMÉTICOS']
-    let tipo = [
+    const nomes = ['PRODUTOS NUTRICIONAS', 'PRODUTOS DERMOCOSMÉTICOS']
+    const tipo = [
         {divisao:{ nome: nomes, marca:[
         'absolut', 'athletica','body-food', 'bublee-pump', 'dux', 'integral-medica','iridium',
         'maxi-nutri', 'max-titanium', 'naturovos', 'nutra', 'nutringroup', 'probiotica', 'sanavita',
