@@ -1,5 +1,4 @@
 import './home.css'
-import '../public'
 function HomePage(){
     const nomes = ['PRODUTOS NUTRICIONAS', 'PRODUTOS DERMOCOSMÉTICOS']
     const tipo = [
@@ -21,7 +20,7 @@ function HomePage(){
                     <div className="row row-gap-3 nutricionais">
                     { tipo[i].divisao.marca.map((marcas) =>
                         <div key={marcas} className="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <img className="rounded-4" src={`../public/images/${item.split(' ').join('-')}/${marcas}.png`} alt=""/>
+                            <img className="rounded-4" src={`../public/${item.split(' ').join('-')}/${marcas}.png`} alt=""/>
                         </div>
                     )}
                     </div>
