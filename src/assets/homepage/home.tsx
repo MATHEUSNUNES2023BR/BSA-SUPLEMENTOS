@@ -15,11 +15,11 @@ function HomePage(){
                 <h1 className="col-12 text-center fw-bold">BSA_SUPLEMENTOS</h1>
             </div>
             { nomes.map((item: string, i:number) =>(
-                <div className="rr row justify-content-center">
+                <div key={i+1} className="rr row justify-content-center">
                     <h2 className="col-12 mb-4">{item}</h2>
                     <div className="row row-gap-3 nutricionais">
-                    { tipo[i].divisao.marca.map(marcas =>
-                        <div className="col-6 col-sm-4 col-md-3 col-lg-2">
+                    { tipo[i].divisao.marca.map((marcas, t) =>
+                        <div key={t+1+'a'} className="col-6 col-sm-4 col-md-3 col-lg-2">
                             <img className="rounded-4" src={`../public/images/${item.split(' ').join('-')}/${marcas}.png`} alt=""/>
                         </div>
                     )}
