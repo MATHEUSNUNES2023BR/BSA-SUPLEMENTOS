@@ -6,7 +6,6 @@ function CatalogoIntegralMedica(){
     const caminhos = items['integralmedica'].map( i =>
         ( `../Items-nutricionais/${i.replace(expressaoRegular, '-')}.png` )
     )
-    console.log(caminhos)
     return(
         <Estrutura logo='absolut.png' produto={ {nome:nomes, caminho:caminhos}} />
     )}

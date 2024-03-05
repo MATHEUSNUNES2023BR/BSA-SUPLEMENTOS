@@ -1,5 +1,16 @@
 import './estrutura.css'
 function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, logo:string}){
+    const CapturaDados =  (valor:string) => {
+        const expressaoRegular = /[ /_:%]+/g;
+        const val = valor.toLocaleLowerCase().replace(expressaoRegular, '-')
+        const dados = Array.from(document.getElementsByTagName('h4'))
+        const filtro = dados.filter((item)=>{
+            const dadosText = item.innerText.replace(expressaoRegular, '-').toLocaleLowerCase()
+            return (dadosText.startsWith(val) && dadosText !== val)
+        })
+
+        console.log(filtro)
+    }
     return(
         <div id="Catalogos" className="container my-2 ">
             <h1>BSA_SUPLEMENTOS</h1>
@@ -10,19 +21,19 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
             <div className="Catalogo col-12 justify-content-center d-flex mt-2">
                 <h2>CATÁLOGO DE PRODUTOS</h2>
             </div>
-            <input className="input form-control m-auto fs-3" type="text" placeholder="Pesquisa de Produtos"/>
+            <input onInput={(i)=>{CapturaDados(i.target.value)}} className="input form-control m-auto fs-3" type="text" placeholder="Pesquisa de Produtos"/>
             <div className="r-items row mt-4 mx-1 row-gap-4 justify-content-center my-2">
                 {props.produto.nome.map( (item, i) => (
-                <div className="col-lg-3 col-md-4 col-sm-5 col-12">
+                <div id={'a'+i} className="col-lg-3 col-md-4 col-sm-5 col-12">
                     <div className="card">
                         <div className="card-header border-1 border-bottom  mb-2">
-                            <h4 className="card-title text-center fw-bold">{item}</h4>
+                            <h4 id={'aa'+i} key={item} className="card-title text-center fw-bold">{item}</h4>
                         </div>
                         <div className="card-img justify-content-center d-flex">
                             <div className="row">
                                 <div className="row d-flex justify-content-center m-auto">
                                     <div className="col-8 item-img">
-                                        <img src={props.produto.caminho[i]} className="card-img-top"/>
+                                        <img key={i} src={props.produto.caminho[i]} className="card-img-top"/>
                                     </div>
                                 </div>
                                 <div className="star col-8 d-flex justify-content-center m-auto mt-3">
