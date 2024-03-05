@@ -1,4 +1,4 @@
-const nomes = ['PRODUTOS NUTRICIONAS', 'PRODUTOS DERMOCOSMÉTICOS']
+const nomes = ['PRODUTOS NUTRICIONAIS', 'PRODUTOS DERMOCOSMÉTICOS']
 const tipo = [
 
     {divisao:{ nome: nomes, marca:[
@@ -9,8 +9,7 @@ const tipo = [
 
     {divisao:{ nome: nomes, marca:['depimiel', 'depirol', 'gnano', 'granado logo',
     'herbissimo', 'labotrat', 'loreal', 'nupill', 'taiff']}
-    
-    
+
 }
 ]
 export {nomes, tipo}

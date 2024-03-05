@@ -8,6 +8,6 @@ function CatalogoIntegralMedica(){
     )
     console.log(caminhos)
     return(
-        <Estrutura produto={ {nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='absolut.png' produto={ {nome:nomes, caminho:caminhos}} />
     )}
 export default CatalogoIntegralMedica;

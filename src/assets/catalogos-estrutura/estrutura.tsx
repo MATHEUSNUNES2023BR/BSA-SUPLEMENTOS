@@ -1,10 +1,10 @@
 import './estrutura.css'
-function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}}){
+function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, logo:string}){
     return(
         <div id="Catalogos" className="container my-2 ">
             <h1>BSA_SUPLEMENTOS</h1>
-            <div className="col-sm-7 col-10 justify-content-center d-flex bg-white m-auto p-3 mt-3 rounded-4">
-                <img src="../assets/images/Nutricional/Integral Medica.png" alt=""/>
+            <div className="col-sm-4 col-10 justify-content-center d-flex bg-white m-auto p-3 mt-3 rounded-4">
+                <img src={`../PRODUTOS-NUTRICIONAIS/${props.logo}`} alt=""/>
             </div>
             <hr/>
             <div className="Catalogo col-12 justify-content-center d-flex mt-2">
