@@ -1,14 +1,7 @@
 import './home.css'
+import { Link } from 'react-router-dom'
+import {nomes, tipo} from '../catalogos-dados/dados-home-marcas.tsx'
 function HomePage(){
-    const nomes = ['PRODUTOS NUTRICIONAS', 'PRODUTOS DERMOCOSMÉTICOS']
-    const tipo = [
-        {divisao:{ nome: nomes, marca:[
-        'absolut', 'athletica','body-food', 'bublee-pump', 'dux', 'integral-medica','iridium',
-        'maxi-nutri', 'max-titanium', 'naturovos', 'nutra', 'nutringroup', 'probiotica', 'sanavita',
-        'sanibras', 'unilife', 'vitabe']}},
-        {divisao:{ nome: nomes, marca:['depimiel', 'depirol', 'gnano', 'granado logo',
-        'herbissimo', 'labotrat', 'loreal', 'nupill', 'taiff']}}
-    ]
     return(
         <div className="container mt-4">
             <div className="r1 row justify-content-center">
@@ -20,7 +13,7 @@ function HomePage(){
                     <div className="row row-gap-3 nutricionais">
                     { tipo[i].divisao.marca.map((marcas) =>
                         <div key={marcas} className="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <img className="rounded-4" src={`../${item.split(' ').join('-')}/${marcas}.png`} alt=""/>
+                            <Link to='catalogos/integralmedica'> <img className="rounded-4" src={`../${item.split(' ').join('-')}/${marcas}.png`} alt=""/> </Link>
                         </div>
                     )}
                     </div>

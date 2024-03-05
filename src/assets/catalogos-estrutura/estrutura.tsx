@@ -1,5 +1,5 @@
 import './estrutura.css'
-function EstruturaCatalogos(props:{produtoNome: string; produtoCaminho: string;}){
+function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}}){
     return(
         <div id="Catalogos" className="container my-2 ">
             <h1>BSA_SUPLEMENTOS</h1>
@@ -12,16 +12,17 @@ function EstruturaCatalogos(props:{produtoNome: string; produtoCaminho: string;}
             </div>
             <input className="input form-control m-auto fs-3" type="text" placeholder="Pesquisa de Produtos"/>
             <div className="r-items row mt-4 mx-1 row-gap-4 justify-content-center my-2">
+                {props.produto.nome.map( (item, i) => (
                 <div className="col-lg-3 col-md-4 col-sm-5 col-12">
                     <div className="card">
                         <div className="card-header border-1 border-bottom  mb-2">
-                            <h4 className="card-title text-center fw-bold">{props.produtoNome}</h4>
+                            <h4 className="card-title text-center fw-bold">{item}</h4>
                         </div>
                         <div className="card-img justify-content-center d-flex">
                             <div className="row">
                                 <div className="row d-flex justify-content-center m-auto">
                                     <div className="col-8 item-img">
-                                        <img src={props.produtoCaminho} className="card-img-top"/>
+                                        <img src={props.produto.caminho[i]} className="card-img-top"/>
                                     </div>
                                 </div>
                                 <div className="star col-8 d-flex justify-content-center m-auto mt-3">
@@ -41,6 +42,7 @@ function EstruturaCatalogos(props:{produtoNome: string; produtoCaminho: string;}
                         </div>
                     </div>
                 </div>
+                ))}
             </div>
         </div>
     )
