@@ -6,10 +6,20 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
         const dados = Array.from(document.getElementsByTagName('h4'))
         const filtro = dados.filter((item)=>{
             const dadosText = item.innerText.replace(expressaoRegular, '-').toLocaleLowerCase()
-            return (dadosText.startsWith(val) && dadosText !== val)
+            if (dadosText.includes(val)){
+                return dadosText
+            }
+        })
+        dados.forEach((hide, i) =>{
+            const col = document.getElementsByClassName('col-lg-3')[i]
+            col?.classList.toggle('hide', true)
         })
 
-        console.log(filtro)
+        filtro.forEach((show, i) => {
+            const col = document.getElementsByClassName('achado')[i] 
+            col?.classList.toggle('hide', false)
+            console.log(col)
+        })
     }
     return(
         <div id="Catalogos" className="container my-2 ">
@@ -24,7 +34,7 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
             <input onInput={(i)=>{CapturaDados(i.target.value)}} className="input form-control m-auto fs-3" type="text" placeholder="Pesquisa de Produtos"/>
             <div className="r-items row mt-4 mx-1 row-gap-4 justify-content-center my-2">
                 {props.produto.nome.map( (item, i) => (
-                <div id={'a'+i} className="col-lg-3 col-md-4 col-sm-5 col-12">
+                <div className="col-lg-3 col-md-4 col-sm-5 col-12">
                     <div className="card">
                         <div className="card-header border-1 border-bottom  mb-2">
                             <h4 id={'aa'+i} key={item} className="card-title text-center fw-bold">{item}</h4>

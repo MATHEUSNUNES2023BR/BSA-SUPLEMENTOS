@@ -8,6 +8,9 @@
     color: #fff;
     font-family: "Alice", serif;
 }
+.hide{
+    display: none;
+}
 hr{
     color: white;
 }
