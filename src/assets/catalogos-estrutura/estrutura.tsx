@@ -5,24 +5,30 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
         const val = valor.toLocaleLowerCase().replace(expressaoRegular, '-')
         const dados = Array.from(document.getElementsByTagName('h4'))
         const filtro = dados.filter((item)=>{
-            const dadosText = item.innerText.replace(expressaoRegular, '-').toLocaleLowerCase()
-            if (dadosText.includes(val)){
-                return dadosText
+            const dadosText = (item).innerText.replace(expressaoRegular, '-').toLocaleLowerCase()
+            if(dadosText.includes(val)){
+                item.classList.add('show')
+                item.classList.remove('hide')
+                return item
+            }else{
+                item.classList.add('hide')
+                item.classList.remove('show')
+                return item
             }
         })
-        dados.forEach((hide, i) =>{
-            const col = document.getElementsByClassName('col-lg-3')[i]
-            col?.classList.toggle('hide', true)
+        const hide =  Array.from(document.querySelectorAll('.hide'))
+        const show = Array.from(document.querySelectorAll('.show'))
+        hide.forEach( h => {
+            const pai = h.closest('.col-lg-3')
+            pai.style.display = 'none'
         })
-
-        filtro.forEach((show, i) => {
-            const col = document.getElementsByClassName('achado')[i] 
-            col?.classList.toggle('hide', false)
-            console.log(col)
+        show.forEach( s => {
+            const pai = s.closest('.col-lg-3')
+            pai.style.display = 'block'
         })
-    }
+    }  
     return(
-        <div id="Catalogos" className="container my-2 ">
+        <div id="Catalogos" className="co/ntainer my-2 ">
             <h1>BSA_SUPLEMENTOS</h1>
             <div className="col-sm-4 col-10 justify-content-center d-flex bg-white m-auto p-3 mt-3 rounded-4">
                 <img src={`../PRODUTOS-NUTRICIONAIS/${props.logo}`} alt=""/>
