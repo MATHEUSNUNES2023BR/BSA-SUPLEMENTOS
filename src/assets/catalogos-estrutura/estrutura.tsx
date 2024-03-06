@@ -1,32 +1,39 @@
 import './estrutura.css'
 function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, logo:string}){
-    const CapturaDados =  (valor:string) => {
+    const CapturaDados = (valor: string) => {
         const expressaoRegular = /[ /_:%]+/g;
-        const val = valor.toLocaleLowerCase().replace(expressaoRegular, '-')
-        const dados = Array.from(document.getElementsByTagName('h4'))
-        dados.filter((item)=>{
-            const dadosText = (item).innerText.replace(expressaoRegular, '-').toLocaleLowerCase()
-            if(dadosText.includes(val)){
-                item.classList.add('show')
-                item.classList.remove('hide')
-                return item
-            }else{
-                item.classList.add('hide')
-                item.classList.remove('show')
-                return item
+        const val = valor.toLocaleLowerCase().replace(expressaoRegular, '-');
+        const dados: HTMLCollectionOf<HTMLHeadingElement> = document.getElementsByTagName('h4');
+    
+        Array.from(dados).forEach((item: HTMLHeadingElement) => {
+            const dadosText = item.innerText.replace(expressaoRegular, '-').toLocaleLowerCase();
+            
+            if (dadosText.includes(val)) {
+                item.classList.add('show');
+                item.classList.remove('hide');
+            } else {
+                item.classList.add('hide');
+                item.classList.remove('show');
             }
-        })
-        const hide =  Array.from(document.querySelectorAll('.hide'))
-        const show = Array.from(document.querySelectorAll('.show'))
-        hide.forEach( h => {
-            const pai = h.closest('.col-lg-3')
-            pai.style.display = 'none'
-        })
-        show.forEach( s => {
-            const pai = s.closest('.col-lg-3')
-            pai.style.display = 'block'
-        })
-    }  
+        });
+    
+        const hide: HTMLDivElement[] = Array.from(document.querySelectorAll('.hide'));
+        const show: HTMLDivElement[] = Array.from(document.querySelectorAll('.show'));
+    
+        hide.forEach((h: HTMLDivElement) => {
+            const pai: HTMLDivElement | null = h.closest('.col-lg-3');
+            if (pai) {
+                pai.style.display = 'none';
+            }
+        });
+    
+        show.forEach((s: HTMLDivElement) => {
+            const pai: HTMLDivElement | null = s.closest('.col-lg-3');
+            if (pai) {
+                pai.style.display = 'block';
+            }
+        });
+    };
     return(
         <div id="Catalogos" className="co/ntainer my-2 ">
             <h1>BSA_SUPLEMENTOS</h1>
