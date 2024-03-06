@@ -1,6 +1,8 @@
+import { ChangeEvent } from 'react';
 import './estrutura.css'
 function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, logo:string}){
-    const CapturaDados = (valor: string) => {
+    const CapturaDados = (event: ChangeEvent<HTMLInputElement>) => {
+        const valor:string = event.target.value
         const expressaoRegular = /[ /_:%]+/g;
         const val = valor.toLocaleLowerCase().replace(expressaoRegular, '-');
         const dados: HTMLCollectionOf<HTMLHeadingElement> = document.getElementsByTagName('h4');
@@ -44,7 +46,7 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
             <div className="Catalogo col-12 justify-content-center d-flex mt-2">
                 <h2>CATÁLOGO DE PRODUTOS</h2>
             </div>
-            <input onInput={(i)=>{CapturaDados(i.target.value)}} className="input form-control m-auto fs-3" type="text" placeholder="Pesquisa de Produtos"/>
+            <input onInput={(i)=>{CapturaDados(i as ChangeEvent<HTMLInputElement>)}} className="input form-control m-auto fs-3" type="text" placeholder="Pesquisa de Produtos"/>
             <div className="r-items row mt-4 mx-1 row-gap-4 justify-content-center my-2">
                 {props.produto.nome.map( (item, i) => (
                 <div className="col-lg-3 col-md-4 col-sm-5 col-12">
