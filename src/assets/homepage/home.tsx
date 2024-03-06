@@ -13,7 +13,7 @@ function HomePage(){
                     <div className="row row-gap-3 nutricionais">
                     { tipo[i].divisao.marca.map((marcas) =>
                         <div key={marcas} className="col-6 col-sm-4 col-md-3 col-lg-2">
-                            <Link to='catalogos/integralmedica'> <img className="rounded-4" src={`../${item.split(' ').join('-')}/${marcas}.png`} alt=""/> </Link>
+                            <Link to={'catalogos/'+marcas}> <img className="rounded-4" src={`../${item.split(' ').join('-')}/${marcas}.png`} alt=""/> </Link>
                         </div>
                     )}
                     </div>

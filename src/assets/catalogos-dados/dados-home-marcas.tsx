@@ -2,9 +2,9 @@ const nomes = ['PRODUTOS NUTRICIONAIS', 'PRODUTOS DERMOCOSMÉTICOS']
 const tipo = [
 
     {divisao:{ nome: nomes, marca:[
-    'absolut', 'athletica','body-food', 'bublee-pump', 'dux', 'integral-medica','iridium',
-    'maxi-nutri', 'max-titanium', 'naturovos', 'nutra', 'nutringroup', 'probiotica', 'sanavita',
-    'sanibras', 'unilife', 'vitabe']}},
+    'absolut', 'atlhetica','bodyfood', 'bubleepump', 'duxcomercio', 'integralmedica','iridiumlabs',
+    'maxinutri', 'maxtitanium', 'naturovos', 'nutrata', 'nutringroup', 'probiotica', 'sanavita',
+    'sanibras', 'unilife', 'vitabe', 'vitale']}},
 
 
     {divisao:{ nome: nomes, marca:['depimiel', 'depirol', 'gnano', 'granado logo',
