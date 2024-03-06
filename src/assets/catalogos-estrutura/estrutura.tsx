@@ -22,14 +22,14 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
     
         hide.forEach((h: HTMLDivElement) => {
             const pai: HTMLDivElement | null = h.closest('.col-lg-3');
-            if (pai) {
+            if (pai instanceof HTMLDivElement) {
                 pai.style.display = 'none';
             }
         });
     
         show.forEach((s: HTMLDivElement) => {
             const pai: HTMLDivElement | null = s.closest('.col-lg-3');
-            if (pai) {
+            if (pai instanceof HTMLDivElement ) {
                 pai.style.display = 'block';
             }
         });
