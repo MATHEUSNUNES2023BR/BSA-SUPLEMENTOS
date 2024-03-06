@@ -4,7 +4,7 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
         const expressaoRegular = /[ /_:%]+/g;
         const val = valor.toLocaleLowerCase().replace(expressaoRegular, '-')
         const dados = Array.from(document.getElementsByTagName('h4'))
-        const filtro = dados.filter((item)=>{
+        dados.filter((item)=>{
             const dadosText = (item).innerText.replace(expressaoRegular, '-').toLocaleLowerCase()
             if(dadosText.includes(val)){
                 item.classList.add('show')
