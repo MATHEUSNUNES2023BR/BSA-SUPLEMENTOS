@@ -1,4 +1,4 @@
-const nomes = ['PRODUTOS NUTRICIONAIS', 'PRODUTOS DERMOCOSMÉTICOS']
+const nomes = ['PRODUTOS NUTRICIONAIS', 'PRODUTOS DERMOCOSMETICOS']
 const tipo = [
 
     {divisao:{ nome: nomes, marca:[
@@ -7,7 +7,7 @@ const tipo = [
     'sanibras', 'unilife', 'vitabe', 'vitale']}},
 
 
-    {divisao:{ nome: nomes, marca:['depimiel', 'depirol', 'gnano', 'granado logo',
+    {divisao:{ nome: nomes, marca:['depimiel', 'depiroll', 'gnano', 'granado',
     'herbissimo', 'labotrat', 'loreal', 'nupill', 'taiff']}
 
 }

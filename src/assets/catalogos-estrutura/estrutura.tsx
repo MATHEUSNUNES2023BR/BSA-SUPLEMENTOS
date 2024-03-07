@@ -37,10 +37,10 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
         });
     };
     return(
-        <div id="Catalogos" className="co/ntainer my-2 ">
+        <div id="Catalogos" className="container my-2 ">
             <h1>BSA_SUPLEMENTOS</h1>
             <div className="col-sm-4 col-10 justify-content-center d-flex bg-white m-auto p-3 mt-3 rounded-4">
-                <img src={`../PRODUTOS-NUTRICIONAIS/${props.logo}`} alt=""/>
+                <img src={'../PRODUTOS-DERMOCOSMETICOS/'+ props.logo} alt=""/>
             </div>
             <hr/>
             <div className="Catalogo col-12 justify-content-center d-flex mt-2">
