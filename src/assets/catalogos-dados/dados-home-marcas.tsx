@@ -1,4 +1,4 @@
-const nomes = ['PRODUTOS NUTRICIONAIS', 'PRODUTOS DERMOCOSMETICOS']
+const nomes = ['NUTRICIONAL', 'NUTRIÇÃO E SAÚDE']
 const tipo = [
 
     {divisao:{ nome: nomes, marca:[

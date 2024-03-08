@@ -7,6 +7,6 @@ function Bodyfood(){
         ( `../Items-nutricionais/bodyfood/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='bodyfood.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../PRODUTOS-NUTRICIONAIS/bodyfood.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Bodyfood;

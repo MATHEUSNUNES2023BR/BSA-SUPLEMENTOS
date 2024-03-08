@@ -7,6 +7,6 @@ function Absolut(){
         ( `../Items-nutricionais/absolut/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='absolut.png' produto={{nome:nomes, caminho:caminhos}} />
-    )}
+        <Estrutura logo='../PRODUTOS-NUTRICIONAIS/absolut.png' produto={{nome:nomes, caminho:caminhos}} />
+    )}  
 export default Absolut;
