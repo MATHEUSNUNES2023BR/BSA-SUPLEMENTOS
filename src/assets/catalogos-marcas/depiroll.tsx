@@ -7,6 +7,6 @@ function Depiroll(){
         ( `../Items-dermocosmeticos/depiroll/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../PRODUTOS-DERMOCOSMETICOS/depiroll.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/depiroll.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Depiroll;

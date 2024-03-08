@@ -7,6 +7,6 @@ function Granado(){
         ( `../Items-dermocosmeticos/granado/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='granado.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/granado.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Granado;

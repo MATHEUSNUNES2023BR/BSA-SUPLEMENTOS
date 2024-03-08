@@ -7,6 +7,6 @@ function Iridiumlabs(){
         ( `../Items-nutricionais/iridiumlabs/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='iridiumlabs.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRICIONAL/iridiumlabs.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Iridiumlabs;

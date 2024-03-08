@@ -7,6 +7,6 @@ function Nupill(){
         ( `../Items-dermocosmeticos/nupill/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='nupill.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/nupill.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Nupill;

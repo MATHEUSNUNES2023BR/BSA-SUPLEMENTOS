@@ -7,6 +7,6 @@ function Loreal(){
         ( `../Items-dermocosmeticos/loreal/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='loreal.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/loreal.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Loreal;

@@ -7,6 +7,6 @@ function Sanibras(){
         ( `../Items-nutricionais/sanibras/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='sanibras.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRICIONAL/sanibras.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Sanibras;

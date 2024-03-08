@@ -7,6 +7,6 @@ function CatalogoIntegralMedica(){
         ( `../Items-nutricionais/integralmedica/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='integral-medica.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRICIONAL/integral-medica.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default CatalogoIntegralMedica;

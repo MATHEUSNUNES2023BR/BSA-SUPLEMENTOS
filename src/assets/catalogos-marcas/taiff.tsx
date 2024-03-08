@@ -7,6 +7,6 @@ function Taiff(){
         ( `../Items-dermocosmeticos/taiff/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='taiff.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/taiff.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Taiff;

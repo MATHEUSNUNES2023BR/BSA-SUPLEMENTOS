@@ -7,6 +7,6 @@ function Naturovos(){
         ( `../Items-nutricionais/naturovos/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='naturovos.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRICIONAL/naturovos.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Naturovos;

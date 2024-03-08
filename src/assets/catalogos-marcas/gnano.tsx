@@ -7,6 +7,6 @@ function Gnano(){
         ( `../Items-dermocosmeticos/gnano/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='gnano.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/gnano.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Gnano;

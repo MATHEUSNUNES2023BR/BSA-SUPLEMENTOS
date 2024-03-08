@@ -7,6 +7,6 @@ function Herbissimo(){
         ( `../Items-dermocosmeticos/herbissimo/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='herbissimo.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/herbissimo.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Herbissimo;
