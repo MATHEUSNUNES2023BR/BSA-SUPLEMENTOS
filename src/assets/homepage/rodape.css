@@ -1,0 +1,28 @@
+.contato h3{
+    color: white;
+}
+
+.contato h4{
+    color:aliceblue;
+    font-size: calc(0.2vh + 18px)
+}
+
+.logo h3{
+    color: white;
+}
+.logo p{
+    font-size: calc(0.2vh + 18px);
+    color:aliceblue;
+}
+
+.redes h3{
+    color: white;
+}
+
+.whatsapp {
+    width: 57px;
+    margin-right: 20px;
+}
+.instagram {
+    width: 60px;
+}

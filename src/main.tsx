@@ -7,6 +7,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import App from './App.tsx'
+import Rodape from './assets/homepage/rodape.tsx'
 import CatalogoIntegralMedica from './assets/catalogos-marcas/integralmedica.tsx'
 import Atlhetica from './assets/catalogos-marcas/atlhetica.tsx'
 import Absolut from './assets/catalogos-marcas/absolut.tsx'
@@ -39,9 +40,14 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />},
   {
+    path:"/rodape",
+    element: <Rodape />,
+  },
+  {
     path:"catalogos/integralmedica",
     element: <CatalogoIntegralMedica />,
   },
+
   {
     path:"catalogos/atlhetica",
     element: <Atlhetica />,

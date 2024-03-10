@@ -1,8 +1,10 @@
 import './home.css'
 import { Link } from 'react-router-dom'
 import {nomes, tipo} from '../catalogos-dados/dados-home-marcas.tsx'
+import Rodape from './rodape.tsx'
 function HomePage(){
     return(
+        <>
         <div className="container mt-4">
             <div className="r1 row justify-content-center">
                 <h1 className="col-12 text-center fw-bold">BSA_SUPLEMENTOS</h1>
@@ -20,6 +22,8 @@ function HomePage(){
                 </div>
             ))}
         </div>
+        <Rodape />
+        </>
     )
 }
 export default HomePage;
