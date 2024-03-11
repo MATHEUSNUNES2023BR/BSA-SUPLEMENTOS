@@ -29,7 +29,7 @@ function Rodape(){
                             <a target='blank' href="https://wa.me/message/JQBOEZC7LHOAA1"><img className='img-fluid'  src="../Rodape/whatsapp.svg"/> </a>
                         </div>
                         <div className='instagram'>
-                            <a target='blank' ><img className='img-fluid' src="../Rodape/instagram.svg"/></a> 
+                            <a target='blank' href="https://www.instagram.com/bsa_suplementos?igsh=eTU0cjQxa3puOWtj" ><img className='img-fluid' src="../Rodape/instagram.svg"/></a> 
                         </div>
                     </div>
                     <h4 className='mt-4 text-white'>CPNJ: 52.923.602/0001-14</h4>
