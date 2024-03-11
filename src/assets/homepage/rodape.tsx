@@ -10,7 +10,6 @@ function Rodape(){
                     <div className='borda' />
                     <div>
                         <h4>Telefone: (62) 98132-1737</h4>
-                        <h4>E-mail: bsaforce5@gmail.com</h4>
                     </div>
                     
                 </div>
@@ -22,10 +21,10 @@ function Rodape(){
                     </p>
                 </div>
 
-                <div className="col-md-12 col-lg-4 redes d-flex flex-column align-items-center align-items-sm-center mt-5 mt-md-4 mt-lg-0">
+                <div className="col-md-12 col-lg-4 redes d-flex flex-column align-items-center align-items-sm-center mt-3 mt-md-4 mt-lg-0">
                     <h3>Rede Sociais</h3>
                     <div className='borda' />
-                    <div className="row mb-1">
+                    <div className="row mb-1 mt-1 mt-sm-0">
                         <div className='whatsapp'> 
                             <a target='blank' href="https://wa.me/message/JQBOEZC7LHOAA1"><img className='img-fluid'  src="../Rodape/whatsapp.svg"/> </a>
                         </div>
