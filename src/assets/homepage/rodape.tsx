@@ -32,7 +32,7 @@ function Rodape(){
                             <a target='blank' href="https://www.instagram.com/bsa_suplementos?igsh=eTU0cjQxa3puOWtj" ><img className='img-fluid' src="../Rodape/instagram.svg"/></a> 
                         </div>
                     </div>
-                    <h4 className='mt-4 text-white'>CPNJ: 52.923.602/0001-14</h4>
+                    <h4 className='mt-4 text-white'>CNPJ: 52.923.602/0001-14</h4>
                 </div>
               
             </div>
