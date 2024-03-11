@@ -1,5 +1,6 @@
 import { ChangeEvent } from 'react';
 import './estrutura.css'
+import items from '../catalogos-dados/dados-marcas-produtos';
 function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, logo:string}){
     const CapturaDados = (event: ChangeEvent<HTMLInputElement>) => {
         const valor:string = event.target.value
@@ -73,7 +74,7 @@ function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, l
                         <div className="card-body justify-content-center d-flex">
                             <div className="row">
                                 <button className="btn btn-primary col-12">Veja Detalhes</button>
-                                <button className="btn btn-success mt-4 col-8 m-auto"><a href="#" className="card-link nav-link">PEÇA AGORA</a></button>
+                                <button className="btn btn-success mt-4 col-8 m-auto"><a href={'https://wa.me//+556281321737?text=Tenho%20interesse%20em%20comprar:%20'+ item} target='_blank' className="card-link nav-link">PEÇA AGORA</a></button>
                             </div>
                         </div>
                     </div>
