@@ -25,14 +25,15 @@ function Rodape(){
                 <div className="col-md-12 col-lg-4 redes d-flex flex-column align-items-center align-items-sm-center mt-5 mt-md-4 mt-lg-0">
                     <h3>Rede Sociais</h3>
                     <div className='borda' />
-                    <div className="row">
+                    <div className="row mb-1">
                         <div className='whatsapp'> 
-                            <a target='blank' href="https://wa.me/message/JQBOEZC7LHOAA1"><img className='img-fluid'  src="../public/rodape/whatsapp-svgrepo-com.svg" alt="" /> </a>
+                            <a target='blank' href="https://wa.me/message/JQBOEZC7LHOAA1"><img className='img-fluid'  src="../public/rodape/whatsapp.svg" alt="" /> </a>
                         </div>
                         <div className='instagram'>
-                            <a target='blank' ><img className='img-fluid' src="../public/rodape/instagram-1-svgrepo-com.svg" alt="" /></a> 
+                            <a target='blank' ><img className='img-fluid' src="../public/rodape/instagram.svg" alt="" /></a> 
                         </div>
                     </div>
+                    <h4 className='mt-4 text-white'>CPNJ: 52.923.602/0001-14</h4>
                 </div>
               
             </div>
