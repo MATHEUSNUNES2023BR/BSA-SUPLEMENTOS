@@ -7,6 +7,6 @@ function Bubleepump(){
         ( `../Items-nutricionais/bubleepump/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/bubleepump.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/bubleepump.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Bubleepump;

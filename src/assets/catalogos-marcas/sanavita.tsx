@@ -7,6 +7,6 @@ function Sanavita(){
         ( `../Items-nutricionais/sanavita/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/sanavita.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/sanavita.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Sanavita;

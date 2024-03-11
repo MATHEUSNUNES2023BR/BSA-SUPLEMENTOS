@@ -7,6 +7,6 @@ function Maxtitanium(){
         ( `../Items-nutricionais/maxtitanium/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/maxtitanium.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/maxtitanium.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Maxtitanium;

@@ -7,6 +7,6 @@ function Vitabe(){
         ( `../Items-nutricionais/vitabe/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/vitabe.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/vitabe.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Vitabe;

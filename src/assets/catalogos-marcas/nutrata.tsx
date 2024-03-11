@@ -7,6 +7,6 @@ function Nutrata(){
         ( `../Items-nutricionais/nutrata/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/nutrata.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/nutrata.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Nutrata;

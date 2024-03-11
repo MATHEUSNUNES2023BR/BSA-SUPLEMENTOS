@@ -7,6 +7,6 @@ function Nutringroup(){
         ( `../Items-nutricionais/nutringroup/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/nutringroup.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/nutringroup.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Nutringroup;

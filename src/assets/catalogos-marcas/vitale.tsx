@@ -7,6 +7,6 @@ function Vitale(){
         ( `../Items-nutricionais/vitale/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/vitale.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/vitale.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Vitale;

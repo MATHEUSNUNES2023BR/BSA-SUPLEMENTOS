@@ -7,6 +7,6 @@ function Duxcomercio(){
         ( `../Items-nutricionais/duxcomercio/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/duxcomercio.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/duxcomercio.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Duxcomercio;

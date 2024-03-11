@@ -7,6 +7,6 @@ function Probiotica(){
         ( `../Items-nutricionais/probiotica/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/probiotica.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/probiotica.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Probiotica;

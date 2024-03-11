@@ -7,6 +7,6 @@ function Depimiel(){
         ( `../Items-dermocosmeticos/depimiel/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/depimiel.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../SAÚDE-E-BELEZA/depimiel.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Depimiel;

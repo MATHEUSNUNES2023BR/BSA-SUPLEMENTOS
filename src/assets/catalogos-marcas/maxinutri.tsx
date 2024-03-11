@@ -7,6 +7,6 @@ function Maxinutri(){
         ( `../Items-nutricionais/maxinutri/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/maxinutri.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/maxinutri.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Maxinutri;

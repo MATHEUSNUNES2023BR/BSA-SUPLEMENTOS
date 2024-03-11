@@ -7,6 +7,6 @@ function Unilife(){
         ( `../Items-nutricionais/unilife/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/unilife.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/unilife.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Unilife;

@@ -7,6 +7,6 @@ function Labotrat(){
         ( `../Items-dermocosmeticos/labotrat/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRIÇÃO-E-SAÚDE/labotrat.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../SAÚDE-E-BELEZA/labotrat.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Labotrat;

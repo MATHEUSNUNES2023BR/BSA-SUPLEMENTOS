@@ -7,6 +7,6 @@ function Atlhetica(){
         ( `../Items-nutricionais/atlhetica/${i.replace(expressaoRegular, '-')}.png` )
     )
     return(
-        <Estrutura logo='../NUTRICIONAL/atlhetica.png' produto={{nome:nomes, caminho:caminhos}} />
+        <Estrutura logo='../NUTRIÇÃO/atlhetica.png' produto={{nome:nomes, caminho:caminhos}} />
     )}
 export default Atlhetica;
