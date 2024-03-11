@@ -27,10 +27,10 @@ function Rodape(){
                     <div className='borda' />
                     <div className="row mb-1">
                         <div className='whatsapp'> 
-                            <a target='blank' href="https://wa.me/message/JQBOEZC7LHOAA1"><img className='img-fluid'  src="../public/Rodape/whatsapp.png"/> </a>
+                            <a target='blank' href="https://wa.me/message/JQBOEZC7LHOAA1"><img className='img-fluid'  src="../Rodape/whatsapp.png"/> </a>
                         </div>
                         <div className='instagram'>
-                            <a target='blank' ><img className='img-fluid' src="../public/Rodape/instagram.png"/></a> 
+                            <a target='blank' ><img className='img-fluid' src="../Rodape/instagram.png"/></a> 
                         </div>
                     </div>
                     <h4 className='mt-4 text-white'>CPNJ: 52.923.602/0001-14</h4>
