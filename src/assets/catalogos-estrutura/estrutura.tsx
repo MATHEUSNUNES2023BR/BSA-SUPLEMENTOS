@@ -1,6 +1,5 @@
 import { ChangeEvent } from 'react';
 import './estrutura.css'
-import items from '../catalogos-dados/dados-marcas-produtos';
 function EstruturaCatalogos(props:{produto:{ nome:string[]; caminho:string[]}, logo:string}){
     const CapturaDados = (event: ChangeEvent<HTMLInputElement>) => {
         const valor:string = event.target.value
